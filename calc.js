@@ -1,3 +1,14 @@
+const screen = document.querySelector("#screen");
+const btn7 = document.querySelector ('#btn7');
+btn7.addEventListener('click', appendDigit);
+
+
+function appendDigit(){
+    
+    screen.value += this.value;
+    console.log('wozers');
+}
+
 function add(number1, number2){
     return number1 + number2;
 
